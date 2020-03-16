@@ -1,0 +1,20 @@
+<html>
+<style>
+body
+{
+background-size:100% 100%;
+}
+b { display: inline; }
+p { display: inline; }
+</style>
+
+<body background="dash.jpeg">
+<b>Username:</b>
+<p id="nam"></p>
+</body>
+<script>
+var b=localStorage.getItem("myValue");
+document.getElementById("nam").innerHTML=b;
+</script>
+
+</html>

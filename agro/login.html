@@ -1,0 +1,152 @@
+
+<html>
+<head>
+
+<style>
+
+.sec
+{
+padding:40px;
+margin:40px;
+}
+
+fieldset
+{
+border: 1px solid black;
+border-color:black;
+border-collapse:collapse;
+color:black;
+padding:5px;
+}
+
+body 
+{
+font-family: Alegreya SC;
+background-size: 100%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+overflow: noscroll;
+}
+
+.container 
+{
+  padding: 16px;
+}
+
+form
+{
+width:40%;
+}
+
+input[type=text], input[type=password]
+{
+  width: 100%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type=submit],input[type=button] {
+  width: 100%;
+  background-color:#2698eb;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+h5 
+{
+   width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid #000; 
+   line-height: 0.1em;
+   margin: 10px 0 20px; 
+} 
+
+h5 span 
+{ 
+    background:#fff; 
+    padding:0 10px; 
+}
+
+@media screen and (max-width: 300px) 
+{
+  span.psw {
+     display: block;
+     float: none;
+}
+
+span.psw 
+{
+float: right;
+padding-top: 16px;
+color:black;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px;
+}
+
+</style>
+</head>
+
+<div class="sec">
+<center>
+<body background="green.jpg">
+
+
+<form> 
+<fieldset>
+<legend><font color="white"><h2>Sign in</h2></legend>
+
+<center>
+<img src="13.jpg" height"15%" width="15%"></img>
+</center>
+<div class="con" align="left">
+    <label for="uname" color="white"><h3><b>Username</b></label>
+    <input type="text" id="txt" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
+        
+<br>
+    <center><input type="submit" onclick="f1()" class="buttont1" value="Log in"></center>   
+  </div>
+  <div class="con">
+    <b><span class="psw">Forgot password?</span>
+  </div>
+<hr>
+    <center><input type="button" class="buttont1" value="Create an account"></center>
+</font>
+</fieldset>
+</form>
+</body>
+</center>
+</div>
+<div class="sec">
+</div>
+<script>
+function f1()
+{
+var u=document.getElementById("txt").value;
+var p=document.getElementById("psw").value;
+localStorage.setItem("myValue",u);
+if(u.localeCompare("abc")==0&&(p.localeCompare("abc")==0))
+{
+window.open("index2.html");
+}
+else
+{
+window.alert("CHECK DETAILS");
+}
+}
+</script>
+</html>

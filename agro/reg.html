@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>One-Stop Mart</title>
+		<style>
+			sup{
+				color:white;
+			}
+
+			a{
+				color:black;
+			}
+			
+			
+		</style>
+	</head>
+	<style>
+body 
+{
+font-family: Alegreya SC;
+background-size: 100%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+overflow: noscroll;
+}
+
+form
+{
+width:40%;
+}
+
+input[type=submit],input[type=reset] {
+  width: 40%;
+  background-color:#2698eb;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+input[type=reset]:hover 
+{
+  background-color: #45a049;
+}
+
+</style>
+	<body bgcolor="Green" background="C:\Users\Harshil\Desktop\agro\green.jpg">
+	<font color="white">
+		<h1 align="Center">Create an account</h1>
+		<center><form>
+			<fieldset>
+				<legend align="Center">Personal Details</legend>
+				<table  cellpadding="20%" align="Center">
+					<tr>
+					<td><strong>Enter Name:</strong></td>
+					<td><input type="text" name="name" size="20" placeholder="Your Name" required></td>
+					</tr>
+
+					<tr>
+					<td><strong>Enter Password:</strong></td>
+					<td><input type="password" id="password" placeholder="Your Password" size="20" required></td>
+					</tr>
+
+					<tr>
+					<td><strong>Confirm Password:</strong></td>
+					<td><input type="password" id="confirm_password" placeholder="Confirm Password" size="20" required></td>
+					</tr>
+
+					
+					<tr>
+					<td><strong>Enter Mobile Number:</strong></td>
+					<td><input type="tel" placeholder="Example: 9925897812" minlength="10" maxlength="10" required></td>
+					</tr>
+
+					<tr>
+					<td><strong>Enter Email ID:</strong></td>
+					<td><input type="email" placeholder="Example: abc@gmail.com" maxlength="20"></td>
+					</tr>
+				</table>
+			</fieldset>
+				
+			<fieldset>
+				<legend align="Center">Other Details</legend>
+				<table cellpadding="20%" align="Center">
+				<tr>
+				<td><strong>Select State:</strong></td>
+				<td><select>
+					<option value="Guj">Gujarat</option>
+					<option value="MH">Maharashtra</option>
+					<option value="Raj">Rajasthan</option>
+				</select></td>
+				</tr>
+				
+				<tr>
+				<td><strong>Select City:</strong></td>
+				<td><select>
+					<option value="Nvs">Navsari</option>
+					<option value="Surat">Surat</option>
+					<option value="Vadodra">Vadodra</option>
+					<option value="Bharuch">Bharuch</option>
+					<option value="Mumbai Central">Mumbai Central</option>
+					<option value="Powai">Powai</option>
+				</select></td>
+				</tr>
+
+				<tr>
+					<td><strong>Enter Pincode:</strong></td>
+					<td><input type="text" size="6" placeholder="396445" required></td>
+				</tr>
+				</table>
+			</fieldset>
+		</form>
+<center>
+		<input type="submit" name="submit" value="Submit" >
+<br>
+		<input type="reset" name="reset" value="Reset">
+	</font>
+	</body>
+</html>

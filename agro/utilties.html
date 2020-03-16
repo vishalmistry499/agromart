@@ -1,0 +1,50 @@
+<html>
+<style>
+.dropbtn {
+font-family: "Times New Roman";
+color:black;
+padding: 14px 40px;
+font-size: 17px;
+border: none;
+}
+
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #grey;}
+
+</style>
+<body background="orange.jpg" height="100%">
+<div class="dropdown">
+<button class="dropbtn">Utilities</button>
+<div class="dropdown-content">
+<a href="tools.html" target="dash">Purchase Tools</a>
+<a href="fertilizers.html" target="dash">Buy Fertilizers</a>
+<a href="cropinfo.html" target="dash">Crop Info</a>
+<a href="https://www.accuweather.com/" target="dash">Weather Forecast</a>
+<a href="#">Order History</a>
+</div>
+</div>
+</body>
+</html>
